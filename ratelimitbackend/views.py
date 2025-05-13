@@ -1,9 +1,10 @@
+from urllib.parse import urlparse
+
 from django.conf import settings
 from django.contrib.auth import REDIRECT_FIELD_NAME, login as auth_login
 from django.contrib.sites.shortcuts import get_current_site
 from django.shortcuts import redirect
 from django.template.response import TemplateResponse
-from django.utils.six.moves.urllib.parse import urlparse
 from django.views.decorators.cache import never_cache
 from django.views.decorators.csrf import csrf_protect
 from django.views.decorators.debug import sensitive_post_parameters
